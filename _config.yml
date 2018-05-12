@@ -1,3 +1,4 @@
 name: Brian McCarty
 markdown: kramdown
 timezone: America/Los_Angeles
+permalink: /blog/:year/:month/:day/:title
