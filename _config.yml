@@ -31,6 +31,8 @@ navbar-links:
     - GitHub Pages:     "https://pages.github.com/"
   Powershell:
     - 365 Lab:          "https://365lab.net/"
+    - Documentarian:    "http://documentarian.gitlab.io/documentarian/"
+    - Mike F Robbins:   "http://mikefrobbins.com/"
  # Author's home: "http://deanattali.com"
 
 # Image to show in the navigation bar - image must be a square (width = height)
