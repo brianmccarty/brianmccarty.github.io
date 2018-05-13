@@ -22,7 +22,7 @@ Description: **logical** *and*
 Example
 
 ```powershell
-Get-ChildItem | Where-Object  {($_.Length -gt 1MB ) -and ($_.Length -lt 10MB ) }
+Get-ChildItem | Where-Object {($_.Length -gt 1MB) -and ($_.Length -lt 10MB)}
 ```
 
 Explanation: *Will find all files where the size is between 1MB and 10 MB.*
@@ -40,7 +40,7 @@ Description: **logical** *or*
 Example
 
 ```powershell
-Get-ChildItem | Where-Object {($_.Name –like “*Microsoft*” ) –or ($_.Name –like “*Apple*” ) }
+Get-ChildItem | Where-Object {($_.Name –like “*Microsoft*”) –or ($_.Name –like “*Apple*”)}
 ```
 
 Explanation: *Will find all files where the name includes either “Microsoft” or “Apple”.*
@@ -58,7 +58,7 @@ Description: **logical** *exclusive or*
 Example
 
 ```powershell
-Get-ChildItem | Where-Object {($_.Name –like “*Microsoft*” ) –xor ($_.Name –like “*RDS*” ) }
+Get-ChildItem | Where-Object {($_.Name –like “*Microsoft*”) –xor ($_.Name –like “*RDS*”)}
 ```
 
 Explanation: *Will find all files where the name includes “Microsoft” but does not include “RDS”.*
@@ -76,7 +76,7 @@ Description: **logical** *not*
 Example
 
 ```powershell
-Get-ChildItem | Where-Object {($_.Name –like “*Microsoft*” ) –and –not ($_.Length –gt 1MB ) }
+Get-ChildItem | Where-Object {($_.Name –like “*Microsoft*”) –and –not ($_.Length –gt 1MB)}
 ```
 
 Explanation: *Will find all files where the name includes “Microsoft” and the file is not greater than 1MB.*
@@ -92,7 +92,7 @@ Description: *same as operator –not*
 Example
 
 ```powershell
-Get-ChildItem | Where-Object {($_.Name –like “*Microsoft*” ) –and !($_.Length –gt 1MB ) }
+Get-ChildItem | Where-Object {($_.Name –like “*Microsoft*”) –and !($_.Length –gt 1MB)}
 ```
 
 Explanation: *same as operator –not*
