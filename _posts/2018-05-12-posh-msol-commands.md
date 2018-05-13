@@ -4,7 +4,7 @@ title: "Microsoft Online Commands"
 date: 2018-05-12
 tags: [PowerShell, MSOLService]
 ---
-Add POSH MSOL Commands
+
 ### **List users who a billing contacts**
 
     $role = Get-MsolRole -RoleName "Company Administrator"
@@ -80,11 +80,9 @@ Add POSH MSOL Commands
 
 ### **Export the list of cloud only accounts to a csv file**
 
-
 ### **Add Users**
 
     New-MsolUser -DisplayName "First Last" -FirstName First -LastName Last -UserPrincipalName user@domain.com -UsageLocation US -LicenseAssignment #LicenseSKU
-
 
 ### **Add Users in Bulk**
 
@@ -102,31 +100,26 @@ Remaining rows filed with data
                      -LicenseAssignment $_.AccountSkuId
     } | Export-Csv -Path "PathtoResults\Results.csv" -NoTypeInformation
 
-
-### **Get User Password Policy
+### **Get User Password Policy**
 
     Get-MsolUser -UserPrincipalName user@domain.com | Select-Object PasswordNeverExpires
 
     Get-MsolUser | Format-Table DisplayName, PasswordNeverExpires
 
-
-### **Roles
+### **Roles**
 
     Get-MsolRole
 
-
-### **List Role Members
+### **List Role Members**
 
     $role = Get-MsolRole -RoleName "Company Administrator"
 
     Get-MsolRoleMember -RoleObjectId $role.ObjectId
 
-
-### **Add Role Member
+### **Add Role Member**
 
     Add-MsolRoleMember -RoleName "Company Administrator" -RoleMemberEmailAddress user@domain.com
 
-
-### **Remove Role Member
+### **Remove Role Member**
 
     Remove-MsolRoleMember -RoleName "Company Administrator" -RoleMemberType User -RoleMemberEmailAddress user@domain.com
