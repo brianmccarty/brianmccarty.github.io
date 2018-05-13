@@ -78,18 +78,15 @@ tags: [PowerShell, MSOLService]
 
     Get-MsolUser -all | Where-Object immutableid -eq $null | export-csv cloudusers.csv
 
-### **Export the list of cloud only accounts to a csv file**
-
 ### **Add Users**
 
     New-MsolUser -DisplayName "First Last" -FirstName First -LastName Last -UserPrincipalName user@domain.com -UsageLocation US -LicenseAssignment #LicenseSKU
 
 ### **Add Users in Bulk**
-
-Create a CSV:\
-"DisplayName","FirstName","LastName","UsageLocation","AccountSkuId"\
-Remaining rows filed with data
-
+* Create a CSV:
+* "DisplayName","FirstName","LastName","UsageLocation","AccountSkuId"
+* Remaining rows filed with data
+```
     Import-Csv -Path "pathtocsv" |
     ForEach-Object {
         New-MsolUser -DisplayName $_.DisplayName
@@ -99,6 +96,7 @@ Remaining rows filed with data
                      -UsageLocation $_.UsageLocation
                      -LicenseAssignment $_.AccountSkuId
     } | Export-Csv -Path "PathtoResults\Results.csv" -NoTypeInformation
+```
 
 ### **Get User Password Policy**
 
