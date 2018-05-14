@@ -96,3 +96,5 @@ Get-ChildItem | Where-Object {($_.Name –like “*Microsoft*”) –and !($_.Le
 ```
 
 Explanation: *same as operator –not*
+
+##### Content by [The Scripting Dutchman](http://jeffwouters.nl/index.php/2012/03/powershell-conditional-and-comparison-operators-explained/)
