@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "PowerShell nuggets"
-date: 2018-05-14
+title: "PowerShell nuggets - misc stuff"
+date: 2018-05-02
 tags: [PowerShell]
 ---
 ## Quick PowerShell nuggets that should be second nature
@@ -16,49 +16,49 @@ tags: [PowerShell]
 ### Find out where the PowerShell Modules live
 
 ```powershell
-Get-content env:psmodulepath
+Get-Content env:psmodulepath
 ```
 
 ### List available powershell modules
 
 ```powershell
-Get-module -listavailable
+Get-Module -listavailable
 ```
 
 ### List currently loaded modules
 
 ```powershell
-Get-module
+Get-Module
 ```
 
 ### Import-modules
 
 ```powershell
-Import-module MODULENAME
+Import-Module <MODULENAME>
 ```
 
 ### Get commands for a specific module
 
 ```powershell
-Get-command -module servermanager
+Get-Command -module servermanager
 ```
 
 ### Get the application log for all computers in the names.txt file
 
 ```powershell
-Get-eventlog -logtype application -computer (get-content names.txt)
+Get-Eventlog -logtype application -computer (Get-Content names.txt)
 ```
 
 ### Sorting output by an attribute in descending order
 
 ```powershell
-Get-process | sort-object -property VM
-Get-process | sort vm -descending
-Get-process | sort vm,id -desc
+Get-Process | Sort-Object -property vm
+Get-Process | Sort-Object vm -descending
+Get-Process | Sort-Object vm,id -desc
 ```
 
 ### Get information and output to html file
 
 ```powershell
-Get-process | select name,vm,id,pm | convertto-html | out-file test1.html
+Get-Process | Select-Object name,vm,id,pm | ConvertTo-Html | Out-File test1.html
 ```
