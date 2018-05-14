@@ -47,7 +47,7 @@ Explanation: *Will find all files where the name includes either “Microsoft”
 
 ***
 
-## Operator: *xor*
+## Operator: *-xor*
 
 Name: Exclusive *or*
 
