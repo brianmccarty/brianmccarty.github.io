@@ -9,12 +9,16 @@ Importing CSV File to create users in AD
 
 Create csv file
 
+***
+
 | samAccountName | Name   | Department | City      | Title      | GivenName   | SurName |
 | -------------- | ------ | ---------- | --------- | ---------- | ----------- | ------- |
 | DonB           | DonB   | IT         | Las Vegas | CIO        | Don         | Snopes  |
 | GregS          | GregS  | Janitorial | Denver    | Custodian  | Greg        | Shields |
 | JeffC          | JeffC  | IT         | Syracuse  | Technician | Jeffery     | Clicks  |
 | ChrisC         | ChrisC | Finance    | Las Vegas | Accountant | Christopher | Carter  |
+
+***
 
 ```powersehll
 Import-csv users.csv | new-aduser
@@ -29,12 +33,17 @@ Import-Csv users.csv | New-ADUser -Path 'ou=sales,dc=company,dc=pri'
 If the csv isnt formatted correctly
 
 Csv is formatted with invalid column names
+
+***
+
 | LoginName | Department  | City      | Title      | FirstName   | LastName |
 | --------- | ----------- | --------- | ---------- | ----------- | -------- |
 | DonB      | IT          | Las Vegas | CIO        | Don         | Snopes   |
 | GregS     | Janitorial  | Denver    | Custodian  | Greg        | Shields  |
 | JeffC     | IT          | Syracuse  | Technician | Jeffery     | Clicks   |
 | ChrisC    | Finance     | Las Vegas | Accountant | Christopher | Carter   |
+
+***
 
 ```powershell
 Import-Csv .\users2.csv |
