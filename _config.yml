@@ -24,7 +24,9 @@ description: Place for stuff in case I forget
 
 # List of links in the navigation bar
 navbar-links:
-  About Me: "aboutme"
+  My Links:
+    - GIST:     "https://gist.github.com/brianmccarty"
+    - Github:   "https://github.com/brianmccarty"
   Resources:
     - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
     - Learn markdown:   "http://www.markdowntutorial.com/"
