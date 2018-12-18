@@ -30,6 +30,7 @@ navbar-links:
   Resources:
     - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
     - Learn markdown:   "http://www.markdowntutorial.com/"
+    - Markdown:         "https://guides.github.com/features/mastering-markdown/"
     - GitHub Pages:     "https://pages.github.com/"
   Powershell:
     - 365 Lab:          "https://365lab.net/"

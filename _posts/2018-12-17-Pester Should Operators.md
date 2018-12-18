@@ -2,7 +2,7 @@
 layout: post
 title: "Pester Should Operators"
 date: 2018-12-17
-tags: [PowerShell]
+tags: [PowerShell,Pester]
 ---
 
 # Should Operators
