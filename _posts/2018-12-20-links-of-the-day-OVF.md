@@ -13,4 +13,6 @@ tags: [PowerShell,OVF]
 
 ![ISO8601 1](/img/2018-12-20_10-29-34,chrome.png)
 
-![ISO8601 2](/img/2018-12-20_10-35-04,chrome.pngg)
+![ISO8601 2](/img/2018-12-20_10-35-04,chrome.png)
+
+![PoshBot and Teams](https://youtu.be/kt-nrHbgTns?t=1325)
