@@ -2,7 +2,7 @@
 layout: post
 title: "PSPowerHour"
 date: 2018-12-20
-tags: [PowerShell,OVF]
+tags: [PowerShell,OVF,ISO8601]
 ---
 
 # Slides from PSPowerHour
@@ -23,7 +23,7 @@ tags: [PowerShell,OVF]
 
 [ISO 8601 www.iso.org](https://www.iso.org/iso-8601-date-and-time-format.html)
 
-[ISO 8601 xkcd](https://xkcd.com/1179/)
+![ISO 8601 xkcd](https://imgs.xkcd.com/comics/iso_8601.png)
 
 ![](https://raw.githubusercontent.com/poshbotio/PoshBot/master/Media/poshbot_logo_300_432.png)
 [PoshBot and Teams](https://youtu.be/kt-nrHbgTns?t=1325)
