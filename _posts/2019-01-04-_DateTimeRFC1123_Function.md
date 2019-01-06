@@ -12,7 +12,7 @@ function _DateTimeRFC1123() {
 }
 ```
 
-Running the command _DateTimeISO8601 returns the value
+Running the command _DateTimeRFC1123 returns the value
 
 ```
 Sun, 06 Jan 2019 20:27:41 GMT

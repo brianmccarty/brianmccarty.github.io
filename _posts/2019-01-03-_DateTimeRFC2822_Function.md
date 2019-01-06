@@ -14,7 +14,7 @@ function _DateTimeRFC2822() {
 }
 ```
 
-Running the command _DateTimeISO8601 returns the value
+Running the command _DateTimeRFC2822 returns the value
 
 ```
 Sun, 06 Jan 2019 20:26:27 -0000
