@@ -7,7 +7,9 @@ tags: [PowerShell,Functions]
 
 ```powershell
 function _DateTimeISO8601() {
-    [string]$date_string = ([System.DateTime]::Now | Get-Date -Format yyyy-MM-ddTHH.mm.sszzz).ToString() | foreach {$_ -replace ":", "."}
+    [string]$date_string = ([System.DateTime]::Now | `
+        Get-Date -Format yyyy-MM-ddTHH.mm.sszzz).ToString() | `
+        foreach {$_ -replace ":", "."}
     return $date_string
 }
 ```
