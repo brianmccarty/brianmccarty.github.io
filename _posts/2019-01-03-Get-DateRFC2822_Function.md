@@ -7,9 +7,7 @@ tags: [PowerShell,Functions,DateTime]
 
 ```powershell
 function Get-DateRFC2822() {
-    $date = Get-Date
-    [string]$date_string = $date.ToUniversalTime().ToString("ddd, dd MMM yyyy HH:mm:ss -0000", `
-        ([System.Globalization.CultureInfo]::InvariantCulture))
+    [string]$date_string = ([System.DateTime]::Now | Get-Date).ToString("ddd, dd MMM yyyy HH:mm:ss zzz", ([System.Globalization.CultureInfo]::InvariantCulture))
     return $date_string
 }
 ```
