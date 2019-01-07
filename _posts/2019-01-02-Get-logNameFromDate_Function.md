@@ -29,7 +29,7 @@ function Get-logNameFromDate {
 #>
     param (
         [string]$name = "$env:username-",
-        [string]$stamp = (_DateTimeISO8601),
+        [string]$stamp = (Get-DateISO8601),
         [string]$extension = "log"
     )
     $logname = "{0}{1}.{2}" -f $name, $stamp, $extension
