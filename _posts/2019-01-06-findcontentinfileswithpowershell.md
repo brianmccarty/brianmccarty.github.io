@@ -2,7 +2,7 @@
 layout: post
 title: "Find content in files with PowerShell"
 date: 2019-01-06
-tags: [PowerShell]
+tags: [PowerShell,Search]
 ---
 
 # Find content in files with PowerShell

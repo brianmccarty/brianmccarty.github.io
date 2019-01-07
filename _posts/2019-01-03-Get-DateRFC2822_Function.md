@@ -2,7 +2,7 @@
 layout: post
 title: "New Function: Get-DateRFC2822"
 date: 2019-01-03
-tags: [PowerShell,Functions]
+tags: [PowerShell,Functions,DateTime]
 ---
 
 ```powershell

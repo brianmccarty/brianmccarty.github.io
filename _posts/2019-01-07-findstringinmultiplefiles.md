@@ -2,7 +2,7 @@
 layout: post
 title: Find string in multiple files
 date: 2019-01-07
-tags: [PowerShell]
+tags: [PowerShell,Search]
 ---
 
 # Find string in multiple files
