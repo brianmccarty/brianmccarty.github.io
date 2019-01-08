@@ -1,6 +1,6 @@
 ﻿---
 layout: post
-title: New Function: Search-FileContent
+title: "New Function: Search-FileContent"
 date: 2019-01-07
 tags: [PowerShell]
 ---
