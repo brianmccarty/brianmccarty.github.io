@@ -12,12 +12,20 @@ author: "Brian McCarty"
 # --- List of links in the navigation bar --- #
 
 navbar-links:
-  About Me: "aboutme"
+  My Links:
+    - GIST:     "https://gist.github.com/brianmccarty"	
+    - Github:   "https://github.com/brianmccarty"	
   Resources:
     - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
-    - Learn markdown: "http://www.markdowntutorial.com/"
-    - GitHub Pages: "https://pages.github.com/"
-  Author's home: "http://brianmccarty.github.io"
+    - Learn markdown:   "http://www.markdowntutorial.com/"
+    - Markdown:         "https://guides.github.com/features/mastering-markdown/"
+    - Markdown Guide:   "https://markdown-guide.readthedocs.io/en/latest/basics.html"	
+    - GitHub Pages:     "https://pages.github.com/"	
+  Powershell:	
+    - 365 Lab:          "https://365lab.net/"	
+    - Documentarian:    "http://documentarian.gitlab.io/documentarian/"	
+    - Mike F Robbins:   "http://mikefrobbins.com/"	
+    - PSFramework:      "http://psframework.org/"
 
 # --- Logo --- #
 
